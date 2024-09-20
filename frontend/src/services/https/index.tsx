@@ -739,7 +739,7 @@ async function ReleaseSeats() {
     },
   };
 
-  let res = await fetch(`${apiUrl}/release-seats, requestOptions`)
+  let res = await fetch(`${apiUrl}/release-seats`, requestOptions)
     .then((res) => {
       if (res.status === 200) {
         return res.json();
