@@ -45,7 +45,7 @@ const SeatMap: React.FC = () => {
   
   // ดึงข้อมูลจาก localStorage
   useEffect(() => {
-    const storedMemberID = localStorage.getItem('memberID');
+    const storedMemberID = localStorage.getItem('id');
     if (storedMemberID) setMemberID(Number(storedMemberID));
   }, []);
 
